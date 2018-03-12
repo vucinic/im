@@ -1,0 +1,25 @@
+
+
+    invs        total found invariants
+    usefull     invariants without unprocessable data for IM
+                (eg. 'has only one value', 'orig', 'return')
+    distinct    non-duplicated invariants
+    locals      invariants that involve only local variables (distinct)
+    globals     invariants that involve a global variable (distinct)
+
+
+
+File name                                                                    invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+bzip2-with-injected-functions.txt                                           13886       7124       1882        238       1644
+gamespace.txt                                                               29160      18533       8495        362       8133
+moc.txt                                                                      8553       4022       2012          7       2005
+mpg123-15min-execution-with-global-premium.txt                             109775      57496       6826         92       6734
+mpg123-2min-execution-with-global-premium.txt                               87966      41280       4651         72       4579
+mpg123-brief-execution-with-global-premium.txt                              83166      38624       3867         71       3796
+mpg123_limited_functions.txt                                                 7519       3422        551          2        549
+oathtool-100-validations-100-otp-tokens.txt                                  3877       2595        369        176        193
+oathtool-100-validations-100-otp-tokens-with-dyncomp.txt                     3816       2333        412        217        195
+oathtool-100-validations-single-otp-token.txt                                3874       2578        363        178        185
+oathtool-single-otp-validation.txt                                           2484       1517        225        128         97
+

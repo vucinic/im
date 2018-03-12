@@ -1,0 +1,388 @@
+
+invs        total found invariants
+usefull     invariants without unprocessable data for IM
+            (eg. 'has only one value', 'orig', 'return')
+distinct    non-duplicated invariants
+locals      invariants that involve only local variables (distinct)
+globals     invariants that involve a global variable (distinct)
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../bzip2-with-injected-functions.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+..BZ2_blockSort()                                                            2714       1287        673        117        556
+..BZ2_bsInitWrite()                                                          1645        828        423         72        351
+..BZ2_bzCompress()                                                           1355        644        417         31        386
+..BZ2_bzCompressEnd()                                                         723        399        202         30        172
+..BZ2_bzCompressInit()                                                        524        283        166         10        156
+..BZ2_bzWrite()                                                               570        351        193          5        188
+..BZ2_bzWriteClose64()                                                        489        269        153          9        144
+..BZ2_bzWriteOpen()                                                           411        229        123          2        121
+..BZ2_compressBlock()                                                        2737       1323        803        129        674
+..BZ2_hbAssignCodes()                                                        1408        770        619          6        613
+..BZ2_hbMakeCodeLengths()                                                     480        311        160          3        157
+..fopen_output_safely()                                                       381        218        110          1        109
+..main()                                                                      449        212        183          2        181
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../gamespace.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+..moveFlexiblePlayer()                                                       3717       1898        972         74        898
+..movePlayer()                                                               9801       6461       4524        270       4254
+..movePoint()                                                                5174       3219       2022          7       2015
+..movePointInMap()                                                           5617       3431       2250         30       2220
+..moveSolidPlayer()                                                          2602       1392        720         72        648
+..setupPlayer()                                                              2249       2132       2132        119       2013
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../moc.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+..options_get_int()                                                           353        152         89          0         89
+interface.c.menu_key()                                                       8196       3866       1934          3       1931
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../mpg123-15min-execution-with-global-premium.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+..INT123_catchsignal()                                                       1287        502        260          0        260
+..INT123_compat_strdup()                                                      838        411        206          1        205
+..INT123_safe_realloc()                                                      1133        526        264          1        263
+..audio_capabilities()                                                       1094        510        256          0        256
+..brate()                                                                    2144       1117        605         16        589
+src/term.c.term_handle_key()                                                 2770       1610        926          0        926
+..check_locale()                                                             1057        500        258          0        258
+..close_track()                                                              1490        670        335          0        335
+..dump_close()                                                               1083        506        253          0        253
+..dump_open()                                                                1101        513        257          0        257
+..free_playlist()                                                            1392        631        355          0        355
+..get_next_file()                                                            1675        736        380          0        380
+..getlopt()                                                                  1646        725        374          3        371
+..getsingleopt()                                                             1649        727        375          3        372
+..httpdata_free()                                                            5056       2101       1051         15       1036
+..httpdata_init()                                                            5339       2217       1109         15       1094
+..httpdata_reset()                                                           6314       3413       1707         15       1692
+..load_equalizer()                                                           1098        511        256          0        256
+..next_track()                                                               2107       1294        647          0        647
+..open_track()                                                               1545        682        349          1        348
+..play_frame()                                                               2897       1600        806          0        806
+..playlist_jump()                                                            1916        842        434          0        434
+..playlist_pos()                                                             2093        948        556          9        547
+..prepare_playlist()                                                         1474        694        452          3        449
+..prev_track()                                                               1542        702        367          0        367
+..print_header_compact()                                                     1539        689        345          0        345
+..print_id3_tag()                                                            1788        780        393          0        393
+..set_intflag()                                                              1286        600        308          0        308
+..skip_or_die()                                                              1835        813        407          2        405
+..split_dir_file()                                                           2687       1975       1003          4        999
+..term_control()                                                             3069       1924       1077          0       1077
+..term_exit()                                                                1451        668        334          0        334
+..term_hint()                                                                1682        758        379          0        379
+..term_init()                                                                1594        717        413          0        413
+..term_setup()                                                               3754       1608        805         15        790
+..term_width()                                                               5054       4022       2106          0       2106
+src/local.c.is_utf8()                                                        1061        489        245          1        244
+src/metaprint.c.print_oneline()                                              3885       2545       1278          7       1271
+src/metaprint.c.print_pair()                                                 4158       2666       1337         12       1325
+src/metaprint.c.transform()                                                  3860       2458       1301          6       1295
+src/mpg123.c.check_fatal_output()                                            1295        588        295          0        295
+src/mpg123.c.controlled_drain()                                              1277        588        294          0        294
+src/mpg123.c.play_prebuffer()                                                1312        596        298          0        298
+src/mpg123.c.print_title()                                                   1298        606        303          0        303
+src/mpg123.c.skip_track()                                                    1542        702        367          0        367
+src/playlist.c.add_next_file()                                               3072       1485        881          3        878
+src/playlist.c.add_to_playlist()                                             1483        680        400          1        399
+src/playlist.c.init_playlist()                                               1176        552        285          0        285
+src/term.c.get_key()                                                         3807       2379       1314          0       1314
+src/term.c.term_handle_input()                                               3069       1919       1072          0       1072
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../mpg123-2min-execution-with-global-premium.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+..INT123_catchsignal()                                                       1304        511        264          0        264
+..INT123_compat_strdup()                                                      838        411        206          1        205
+..INT123_safe_realloc()                                                      1133        526        264          1        263
+..audio_capabilities()                                                       1111        518        260          0        260
+..brate()                                                                    2130       1094        593         16        577
+..check_locale()                                                             1057        500        258          0        258
+..close_track()                                                              1344        622        311          0        311
+..dump_close()                                                               1100        514        257          0        257
+..dump_open()                                                                1101        513        257          0        257
+..free_playlist()                                                            1534        675        396          0        396
+..get_next_file()                                                            1818        810        456          0        456
+..getlopt()                                                                  1670        733        381          3        378
+..getsingleopt()                                                             1673        735        382          3        379
+..httpdata_free()                                                            5073       2109       1055         15       1040
+..httpdata_init()                                                            5339       2217       1109         15       1094
+..httpdata_reset()                                                           4863       2015       1008         15        993
+..load_equalizer()                                                           1098        511        256          0        256
+..next_track()                                                               1737        876        438          0        438
+..open_track()                                                               1377        625        313          1        312
+..play_frame()                                                               2042       1121        562          0        562
+..playlist_pos()                                                             1990        851        499          4        495
+..prepare_playlist()                                                         1486        699        458          3        455
+..print_header_compact()                                                     1429        653        327          0        327
+..print_id3_tag()                                                            1473        664        334          0        334
+..set_intflag()                                                              1308        610        313          0        313
+..skip_or_die()                                                              1654        747        374          2        372
+..split_dir_file()                                                           1074        490        246          0        246
+..term_control()                                                             2177       1390        793          0        793
+..term_exit()                                                                1469        674        337          0        337
+..term_hint()                                                                1488        684        342          0        342
+..term_init()                                                                1611        724        415          0        415
+..term_setup()                                                               3772       1614        808         15        793
+..term_width()                                                               1246        554        280          0        280
+src/local.c.is_utf8()                                                        1061        489        245          1        244
+src/metaprint.c.print_oneline()                                              2068        900        453          3        450
+src/metaprint.c.print_pair()                                                 2362       1023        513          6        507
+src/metaprint.c.transform()                                                  1936        753        427          3        424
+src/mpg123.c.check_fatal_output()                                            1309        596        299          0        299
+src/mpg123.c.controlled_drain()                                              1344        622        311          0        311
+src/mpg123.c.play_prebuffer()                                                1334        606        303          0        303
+src/mpg123.c.print_title()                                                   1315        614        307          0        307
+src/playlist.c.add_next_file()                                               1568        706        423          3        420
+src/playlist.c.add_to_playlist()                                             1492        684        403          1        402
+src/playlist.c.init_playlist()                                               1176        552        285          0        285
+src/term.c.get_key()                                                         3727       2307       1273          0       1273
+src/term.c.term_handle_input()                                               3017       1865       1041          0       1041
+src/term.c.term_handle_key()                                                 2738       1573        903          0        903
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../mpg123-brief-execution-with-global-premium.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+..INT123_catchsignal()                                                       1270        495        256          0        256
+..INT123_compat_strdup()                                                      838        411        206          1        205
+..INT123_safe_realloc()                                                      1133        526        264          1        263
+..audio_capabilities()                                                       1077        502        252          0        252
+..brate()                                                                    2025       1028        558         16        542
+..check_locale()                                                             1057        500        258          0        258
+..close_track()                                                              1310        606        303          0        303
+..dump_close()                                                               1066        498        249          0        249
+..dump_open()                                                                1101        513        257          0        257
+..free_playlist()                                                            1493        658        386          0        386
+..get_next_file()                                                            1771        790        446          0        446
+..getlopt()                                                                  1633        723        371          2        369
+..getsingleopt()                                                             1636        725        372          2        370
+..httpdata_free()                                                            5039       2093       1047         15       1032
+..httpdata_init()                                                            5339       2217       1109         15       1094
+..httpdata_reset()                                                           4829       1999       1000         15        985
+..load_equalizer()                                                           1098        511        256          0        256
+..next_track()                                                               1456        788        394          0        394
+..open_track()                                                               1343        609        305          1        304
+..play_frame()                                                               1959       1069        536          0        536
+..playlist_pos()                                                             1943        831        489          4        485
+..prepare_playlist()                                                         1447        681        455          2        453
+..print_header_compact()                                                     1371        629        315          0        315
+..print_id3_tag()                                                            1440        650        327          0        327
+..set_intflag()                                                              1274        594        305          0        305
+..skip_or_die()                                                              1620        731        366          2        364
+..split_dir_file()                                                           1040        474        238          0        238
+..term_control()                                                             2084       1321        751          0        751
+..term_exit()                                                                1427        656        328          0        328
+..term_hint()                                                                1446        666        333          0        333
+..term_init()                                                                1574        707        407          0        407
+..term_setup()                                                               3730       1596        799         15        784
+..term_width()                                                               1237        549        278          0        278
+src/local.c.is_utf8()                                                        1061        489        245          1        244
+src/metaprint.c.print_oneline()                                              2025        882        444          3        441
+src/metaprint.c.print_pair()                                                 2316       1003        503          6        497
+src/metaprint.c.transform()                                                  1903        739        420          3        417
+src/mpg123.c.check_fatal_output()                                            1275        580        291          0        291
+src/mpg123.c.controlled_drain()                                              1310        606        303          0        303
+src/mpg123.c.play_prebuffer()                                                1300        590        295          0        295
+src/mpg123.c.print_title()                                                   1281        598        299          0        299
+src/playlist.c.add_next_file()                                               1516        693        411          2        409
+src/playlist.c.add_to_playlist()                                             1509        685        403          1        402
+src/playlist.c.init_playlist()                                               1176        552        285          0        285
+src/term.c.get_key()                                                         2481       1501        755          0        755
+src/term.c.term_handle_input()                                               2089       1324        754          0        754
+src/term.c.term_handle_key()                                                 1818       1036        615          0        615
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../mpg123_limited_functions.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+..get_next_file()                                                            1771        788        405          0        405
+..next_track()                                                               1264        582        291          0        291
+..prepare_playlist()                                                         1447        680        454          2        452
+..prev_track()                                                               1267        582        291          0        291
+src/playlist.c.shuffle_playlist()                                            1770        790        396          0        396
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../oathtool-100-validations-100-otp-tokens.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+.._oath_hotp_generate2()                                                       68         47         30          7         23
+.._oath_strcmp_callback()                                                      61         40         23          1         22
+..cmdline_parser()                                                            191        114         94         71         23
+..cmdline_parser2()                                                           238        117         97         72         25
+..cmdline_parser_init()                                                       123        106         88         63         25
+..gc_done()                                                                    47         34         17          0         17
+..gc_hmac_sha1()                                                               54         38         21          4         17
+..gc_init()                                                                    48         34         17          0         17
+..hmac_sha1()                                                                  56         39         22          5         17
+..main()                                                                       53         37         23          4         19
+..memxor()                                                                     55         37         20          3         17
+..oath_done()                                                                  48         34         17          0         17
+..oath_hex2bin()                                                               75         47         30          6         24
+..oath_hotp_generate()                                                         66         46         29          6         23
+..oath_hotp_validate()                                                         64         44         27          4         23
+..oath_hotp_validate_callback()                                                59         42         25          7         18
+..oath_init()                                                                  48         34         17          0         17
+..set_program_name()                                                           47         34         22          1         21
+..sha1_finish_ctx()                                                           266        163         92         11         81
+..sha1_init_ctx()                                                              88         69         48         18         30
+..sha1_process_block()                                                        268        164         92         11         81
+..sha1_process_bytes()                                                        202        144         88         14         74
+..sha1_read_ctx()                                                             210        162         85          9         76
+coding.c.hex_decode()                                                          49         35         18          1         17
+oathtool_cmd.c.clear_args()                                                   109         82         50         28         22
+oathtool_cmd.c.clear_given()                                                  219        173         96         63         33
+oathtool_cmd.c.cmdline_parser_internal()                                      380        183        148         86         62
+oathtool_cmd.c.cmdline_parser_release()                                       216        170         92         65         27
+oathtool_cmd.c.free_string_field()                                             54         39         21          2         19
+oathtool_cmd.c.gengetopt_strdup()                                              61         41         23          0         23
+oathtool_cmd.c.init_args_info()                                               171        133         85         60         25
+oathtool_cmd.c.update_arg()                                                   121         70         51         19         32
+sha1.c.set_uint32()                                                            62         43         22          1         21
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../oathtool-100-validations-100-otp-tokens-with-dyncomp.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+.._oath_hotp_generate2()                                                       35         21         14          7          7
+.._oath_strcmp_callback()                                                      30         15          8          1          7
+..cmdline_parser()                                                            202        108         98         84         14
+..cmdline_parser2()                                                           274        114        104         90         14
+..cmdline_parser_init()                                                       153        125        117         76         41
+..gc_done()                                                                    27         14          7          0          7
+..gc_hmac_sha1()                                                               34         18         11          4          7
+..gc_init()                                                                    28         14          7          0          7
+..hmac_sha1()                                                                  36         19         12          5          7
+..main()                                                                       38         22         14          5          9
+..memxor()                                                                     35         17         10          3          7
+..oath_done()                                                                  28         14          7          0          7
+..oath_hex2bin()                                                               46         23         16          7          9
+..oath_hotp_generate()                                                         34         20         13          6          7
+..oath_hotp_validate()                                                         31         18         11          4          7
+..oath_hotp_validate_callback()                                                36         21         14          7          7
+..oath_init()                                                                  28         14          7          0          7
+..set_program_name()                                                           27         14          8          1          7
+..sha1_finish_ctx()                                                           242        144         83         17         66
+..sha1_init_ctx()                                                              68         49         38         18         20
+..sha1_process_block()                                                        246        146         84         17         67
+..sha1_process_bytes()                                                        179        125         79         19         60
+..sha1_read_ctx()                                                             186        143         76         15         61
+coding.c.hex_decode()                                                          29         15          8          1          7
+oathtool_cmd.c.clear_args()                                                   192        132         77         39         38
+oathtool_cmd.c.clear_given()                                                  364        241        140         72         68
+oathtool_cmd.c.cmdline_parser_internal()                                      413        205        165        102         63
+oathtool_cmd.c.cmdline_parser_release()                                       305        224        122         80         42
+oathtool_cmd.c.free_string_field()                                             34         19         11          2          9
+oathtool_cmd.c.gengetopt_strdup()                                              31         16          8          0          8
+oathtool_cmd.c.init_args_info()                                               254        186        113         72         41
+oathtool_cmd.c.update_arg()                                                   109         54         46         35         11
+sha1.c.set_uint32()                                                            42         23         12          1         11
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../oathtool-100-validations-single-otp-token.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+.._oath_hotp_generate2()                                                       57         41         24          6         18
+.._oath_strcmp_callback()                                                      61         41         24          2         22
+..cmdline_parser()                                                            188        115         95         73         22
+..cmdline_parser2()                                                           235        118         98         74         24
+..cmdline_parser_init()                                                       123        106         88         63         25
+..gc_done()                                                                    47         34         17          0         17
+..gc_hmac_sha1()                                                               54         38         21          4         17
+..gc_init()                                                                    48         34         17          0         17
+..hmac_sha1()                                                                  56         39         22          5         17
+..main()                                                                       53         37         23          4         19
+..memxor()                                                                     55         37         20          3         17
+..oath_done()                                                                  48         34         17          0         17
+..oath_hex2bin()                                                               75         47         30          6         24
+..oath_hotp_generate()                                                         55         40         23          5         18
+..oath_hotp_validate()                                                         64         44         27          4         23
+..oath_hotp_validate_callback()                                                58         41         24          6         18
+..oath_init()                                                                  48         34         17          0         17
+..set_program_name()                                                           47         34         22          1         21
+..sha1_finish_ctx()                                                           278        161         90         10         80
+..sha1_init_ctx()                                                              88         69         48         18         30
+..sha1_process_block()                                                        270        162         90         10         80
+..sha1_process_bytes()                                                        203        143         87         13         74
+..sha1_read_ctx()                                                             232        160         84          8         76
+coding.c.hex_decode()                                                          49         35         18          1         17
+oathtool_cmd.c.clear_args()                                                   109         82         50         28         22
+oathtool_cmd.c.clear_given()                                                  219        173         96         63         33
+oathtool_cmd.c.cmdline_parser_internal()                                      369        182        147         88         59
+oathtool_cmd.c.cmdline_parser_release()                                       216        170         92         65         27
+oathtool_cmd.c.free_string_field()                                             54         39         21          2         19
+oathtool_cmd.c.gengetopt_strdup()                                              61         41         23          0         23
+oathtool_cmd.c.init_args_info()                                               171        133         85         60         25
+oathtool_cmd.c.update_arg()                                                   121         71         52         20         32
+sha1.c.set_uint32()                                                            62         43         22          1         21
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
+File ../oathtool-single-otp-validation.txt
+-----------------------------------------------------------------------------------------------------------------------------
+Function                                                                     invs     useful   distinct     locals    globals
+-----------------------------------------------------------------------------------------------------------------------------
+.._oath_hotp_generate2()                                                       37         21         14          6          8
+.._oath_strcmp_callback()                                                      30         15          8          1          7
+..cmdline_parser()                                                            124         85         75         63         12
+..cmdline_parser2()                                                           141         88         78         64         14
+..cmdline_parser_init()                                                       100         83         75         60         15
+..gc_done()                                                                    27         14          7          0          7
+..gc_hmac_sha1()                                                               32         16          9          2          7
+..gc_init()                                                                    28         14          7          0          7
+..hmac_sha1()                                                                  33         16          9          2          7
+..main()                                                                       36         20         12          3          9
+..memxor()                                                                     32         15          8          1          7
+..oath_done()                                                                  28         14          7          0          7
+..oath_hex2bin()                                                               40         21         14          5          9
+..oath_hotp_generate()                                                         35         20         13          5          8
+..oath_hotp_validate()                                                         34         19         12          4          8
+..oath_hotp_validate_callback()                                                36         19         12          4          8
+..oath_init()                                                                  28         14          7          0          7
+..set_program_name()                                                           27         14          8          1          7
+..sha1_finish_ctx()                                                           123         60         34          4         30
+..sha1_init_ctx()                                                              64         45         34         14         20
+..sha1_process_block()                                                        114         60         34          4         30
+..sha1_process_bytes()                                                        119         59         36          7         29
+..sha1_read_ctx()                                                             129         58         32          2         30
+coding.c.hex_decode()                                                          29         15          8          1          7
+oathtool_cmd.c.clear_args()                                                    87         60         38         26         12
+oathtool_cmd.c.clear_given()                                                  179        141         77         58         19
+oathtool_cmd.c.cmdline_parser_internal()                                      279        137        115         75         40
+oathtool_cmd.c.cmdline_parser_release()                                       190        143         76         60         16
+oathtool_cmd.c.free_string_field()                                             53         38         20          1         19
+oathtool_cmd.c.gengetopt_strdup()                                              61         41         23          0         23
+oathtool_cmd.c.init_args_info()                                               147        109         72         57         15
+sha1.c.set_uint32()                                                            62         43         22          1         21
+-----------------------------------------------------------------------------------------------------------------------------
+
