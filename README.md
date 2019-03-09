@@ -1,6 +1,6 @@
 # Invariants
 
-This repository report the extracted invariants for which considerations have been made in the context of the following works about **Invariants Monitoring** protection technique:
+This repository reports the extracted invariants for which considerations have been made in the context of the following works about **Invariants Monitoring** protection technique:
 
 
 [1] Alessio Viticchié, Cataldo Basile, and Antonio Lioy. 
